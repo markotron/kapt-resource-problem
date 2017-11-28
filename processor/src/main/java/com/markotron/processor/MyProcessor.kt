@@ -29,5 +29,5 @@ class MyProcessor : AbstractProcessor() {
   }
 
   override fun getSupportedAnnotationTypes() = setOf(MyAnnotation::class.java.canonicalName)
-  override fun getSupportedSourceVersion() = SourceVersion.latestSupported()
+  override fun getSupportedSourceVersion(): SourceVersion = SourceVersion.latestSupported()
 }
