@@ -12,6 +12,7 @@ class MyProcessor : AbstractProcessor() {
 
   override fun process(annotations: MutableSet<out TypeElement>, env: RoundEnvironment): Boolean {
 
+    // https://youtrack.jetbrains.com/issue/KT-19203
     fun printMsg(msg: String) =
       processingEnv.messager.printMessage(Diagnostic.Kind.MANDATORY_WARNING, msg)
 
